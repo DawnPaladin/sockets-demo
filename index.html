@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>Sockets!</h1>
+
+	<h1 id="count"></h1>
+
+	<button id="increment">increment</button>
+	<button id="decrement">decrement</button>
+</body>
+
+<script>
+	var socket = io.connect('http://localhost:3002');
+	socket.on('new count', function(count) {
+		$('#count').html(count);
+	});
+	$('#increment').click(function() {
+		socket.emit('increment');
+	});
+	$('#decrement').click(function() {
+		socket.emit('decrement');
+	});
+</script>
+</html>
