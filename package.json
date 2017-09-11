@@ -1,5 +1,5 @@
 {
-  "name": "viking-link-shortener",
+  "name": "sockets-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DawnPaladin/viking-link-shortener.git"
+    "url": "git+https://github.com/DawnPaladin/sockets-demo.git"
   },
   "author": "James Harris",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DawnPaladin/viking-link-shortener/issues"
+    "url": "https://github.com/DawnPaladin/sockets-demo/issues"
   },
-  "homepage": "https://github.com/DawnPaladin/viking-link-shortener#readme",
+  "homepage": "https://github.com/DawnPaladin/sockets-demo#readme",
   "dependencies": {
     "dirty": "^1.1.0",
     "express": "^4.15.4",
