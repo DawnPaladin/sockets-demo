@@ -28,6 +28,6 @@ io.on("connection", client => {
 	});
 });
 
-server.listen(3002, function() {
+server.listen(3002, function() { // not "app.listen"
 	console.log("Listening on port 3002");
 });
