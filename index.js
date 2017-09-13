@@ -3,11 +3,6 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
-app.use(
-	"./socket.io",
-	express.static(__dirname + "node_modules/socket.io-client/dist/")
-);
-
 var count = 0;
 
 app.get("/", (req, res) => {
